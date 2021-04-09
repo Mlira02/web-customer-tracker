@@ -34,7 +34,7 @@ build/
 
 # Default ignored files
 /shelf/
-/workspace.xml
+/.idea/workspace.xml
 # Datasource local storage ignored files
 /../../../../../../../:\Users\marcos\Documents\JavaEverything\SpringMVCExample\.idea/dataSources/
 /dataSources.local.xml
