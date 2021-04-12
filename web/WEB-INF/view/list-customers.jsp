@@ -18,6 +18,12 @@
         <h2>CRM - Customer Relationship Mapping</h2>
     </div>
     <div id="container">
+        <div id="content">
+
+            <input type="button"
+                   value="Add Customer"
+                   onclick="window.location.href='showFormForAdd'; return false;"
+                   class="add-button" />
         <table>
             <tr>
                 <th>First Name</th>
@@ -33,9 +39,8 @@
                 </tr>
             </c:forEach>
         </table>
+        </div>
     </div>
 </div>
-
-
 </body>
 </html>
