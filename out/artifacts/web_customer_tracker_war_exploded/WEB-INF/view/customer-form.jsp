@@ -1,11 +1,4 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: marcos
-  Date: 4/12/2021
-  Time: 12:53 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -22,7 +15,6 @@
     <div id="container">
         <h3>Save Customer</h3>
         <form:form action="saveCustomer" modelAttribute="customer" method="post">
-
             <table>
                 <tbody>
                     <tr>
@@ -38,12 +30,16 @@
                         <td><form:input path="email" /></td>
                     </tr>
                     <tr>
-                        <td><label>Email:</label></td>
+                        <td><label></label></td>
                         <td><input type="submit" value="Save" class="save" /></td>
                     </tr>
                 </tbody>
             </table>
         </form:form>
+        <div style="clear; both;"></div>
+        <p>
+            <a href="${pageContext.request.contextPath}/customer/list">Back to List</a>
+        </p>
     </div>
 </body>
 </html>
