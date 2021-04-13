@@ -29,6 +29,18 @@ public class CustomerDAOImpl implements CustomerDAO
     public void saveCustomer(Customer theCustomer)
     {
         Session currentSession = sessionFactory.getCurrentSession();
-        currentSession.save(theCustomer);
+        //        This save or update hibernate method will find out if the id of the customer is
+        //        already taken and save or update depending on if the customer exists
+        currentSession.saveOrUpdate(theCustomer);
+    }
+
+    @Override
+    public Customer getCustomer(int theId)
+    {
+        Session currentSession = sessionFactory.getCurrentSession();
+        Customer theCustomer = currentSession.get(Customer.class, theId);
+        System.out.println("Inside customerDAO grabbing customer with id " + theId + " " + theCustomer.getFirstName());
+
+        return theCustomer;
     }
 }
