@@ -7,12 +7,17 @@ html, body{
 table {   
 	border-collapse:collapse;
 	border-bottom:1px solid gray;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+	border-radius: 10px;
 	font-family: Tahoma,Verdana,Segoe,sans-serif;
 	width:72%;
 }
  
 th {
 	border-bottom:1px solid gray;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
 	background:none repeat scroll 0 0 #09c332;
 	padding:10px;
 	color: #FFFFFF;
@@ -20,6 +25,8 @@ th {
 
 tr {
 	border-top:1px solid gray;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
 	text-align:center;	
 }
  
