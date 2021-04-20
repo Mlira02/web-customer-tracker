@@ -47,7 +47,4 @@ public class CRMLoggingAspect
 
         myLogger.info("======>> The result here: " + theResult);
     }
-
-
-
 }
